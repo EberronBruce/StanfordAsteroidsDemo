@@ -8,20 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		7A2FB2401F80A220001EFC63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2FB23F1F80A220001EFC63 /* AppDelegate.swift */; };
-		7A2FB2421F80A220001EFC63 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2FB2411F80A220001EFC63 /* ViewController.swift */; };
+		7A2FB2421F80A220001EFC63 /* AsteroidsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2FB2411F80A220001EFC63 /* AsteroidsViewController.swift */; };
 		7A2FB2451F80A220001EFC63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A2FB2431F80A220001EFC63 /* Main.storyboard */; };
 		7A2FB2471F80A220001EFC63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A2FB2461F80A220001EFC63 /* Assets.xcassets */; };
 		7A2FB24A1F80A220001EFC63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A2FB2481F80A220001EFC63 /* LaunchScreen.storyboard */; };
+		7A2FB2531F80A503001EFC63 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A2FB2521F80A503001EFC63 /* Default-568h@2x.png */; };
+		7A6A34CD1F80E77200F8E1D4 /* AsteroidView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6A34CC1F80E77200F8E1D4 /* AsteroidView.swift */; };
+		7A6A34CF1F80E94700F8E1D4 /* CoreGraphicsExensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6A34CE1F80E94700F8E1D4 /* CoreGraphicsExensions.swift */; };
+		7A9928E81F80FEE50038F5AE /* AsteroidFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9928E71F80FEE50038F5AE /* AsteroidFieldView.swift */; };
+		7A9928EA1F8123F60038F5AE /* AsteroidBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9928E91F8123F60038F5AE /* AsteroidBehavior.swift */; };
+		7AB103451F80F0F7009FA371 /* SpaceshipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB103441F80F0F7009FA371 /* SpaceshipView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7A2FB23C1F80A220001EFC63 /* Asteroids.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Asteroids.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A2FB23F1F80A220001EFC63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7A2FB2411F80A220001EFC63 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7A2FB2411F80A220001EFC63 /* AsteroidsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsteroidsViewController.swift; sourceTree = "<group>"; };
 		7A2FB2441F80A220001EFC63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7A2FB2461F80A220001EFC63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7A2FB2491F80A220001EFC63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7A2FB24B1F80A220001EFC63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A2FB2521F80A503001EFC63 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		7A6A34CC1F80E77200F8E1D4 /* AsteroidView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsteroidView.swift; sourceTree = "<group>"; };
+		7A6A34CE1F80E94700F8E1D4 /* CoreGraphicsExensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreGraphicsExensions.swift; sourceTree = "<group>"; };
+		7A9928E71F80FEE50038F5AE /* AsteroidFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsteroidFieldView.swift; sourceTree = "<group>"; };
+		7A9928E91F8123F60038F5AE /* AsteroidBehavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsteroidBehavior.swift; sourceTree = "<group>"; };
+		7AB103441F80F0F7009FA371 /* SpaceshipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceshipView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +50,7 @@
 		7A2FB2331F80A220001EFC63 = {
 			isa = PBXGroup;
 			children = (
+				7A2FB2521F80A503001EFC63 /* Default-568h@2x.png */,
 				7A2FB23E1F80A220001EFC63 /* Asteroids */,
 				7A2FB23D1F80A220001EFC63 /* Products */,
 			);
@@ -54,14 +67,27 @@
 		7A2FB23E1F80A220001EFC63 /* Asteroids */ = {
 			isa = PBXGroup;
 			children = (
-				7A2FB23F1F80A220001EFC63 /* AppDelegate.swift */,
-				7A2FB2411F80A220001EFC63 /* ViewController.swift */,
 				7A2FB2431F80A220001EFC63 /* Main.storyboard */,
+				7A2FB2411F80A220001EFC63 /* AsteroidsViewController.swift */,
+				7A9928E91F8123F60038F5AE /* AsteroidBehavior.swift */,
+				7A9928E71F80FEE50038F5AE /* AsteroidFieldView.swift */,
 				7A2FB2461F80A220001EFC63 /* Assets.xcassets */,
-				7A2FB2481F80A220001EFC63 /* LaunchScreen.storyboard */,
-				7A2FB24B1F80A220001EFC63 /* Info.plist */,
+				7AB103431F80EAB6009FA371 /* Supporting FIles */,
 			);
 			path = Asteroids;
+			sourceTree = "<group>";
+		};
+		7AB103431F80EAB6009FA371 /* Supporting FIles */ = {
+			isa = PBXGroup;
+			children = (
+				7AB103441F80F0F7009FA371 /* SpaceshipView.swift */,
+				7A2FB2481F80A220001EFC63 /* LaunchScreen.storyboard */,
+				7A6A34CE1F80E94700F8E1D4 /* CoreGraphicsExensions.swift */,
+				7A2FB23F1F80A220001EFC63 /* AppDelegate.swift */,
+				7A6A34CC1F80E77200F8E1D4 /* AsteroidView.swift */,
+				7A2FB24B1F80A220001EFC63 /* Info.plist */,
+			);
+			name = "Supporting FIles";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A2FB24A1F80A220001EFC63 /* LaunchScreen.storyboard in Resources */,
+				7A2FB2531F80A503001EFC63 /* Default-568h@2x.png in Resources */,
 				7A2FB2471F80A220001EFC63 /* Assets.xcassets in Resources */,
 				7A2FB2451F80A220001EFC63 /* Main.storyboard in Resources */,
 			);
@@ -136,8 +163,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A2FB2421F80A220001EFC63 /* ViewController.swift in Sources */,
+				7A6A34CF1F80E94700F8E1D4 /* CoreGraphicsExensions.swift in Sources */,
+				7A2FB2421F80A220001EFC63 /* AsteroidsViewController.swift in Sources */,
+				7A9928E81F80FEE50038F5AE /* AsteroidFieldView.swift in Sources */,
 				7A2FB2401F80A220001EFC63 /* AppDelegate.swift in Sources */,
+				7A6A34CD1F80E77200F8E1D4 /* AsteroidView.swift in Sources */,
+				7A9928EA1F8123F60038F5AE /* AsteroidBehavior.swift in Sources */,
+				7AB103451F80F0F7009FA371 /* SpaceshipView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
